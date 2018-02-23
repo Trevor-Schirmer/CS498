@@ -1,2 +1,2 @@
-# CS499
-CS499 Final Project
+# CS498
+CS498 Final Project
