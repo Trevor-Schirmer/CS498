@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Group-Id: io.jenkins.plugins
+Short-Name: demo
+Long-Name: TODO Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-03/05/2018 12:39-tpsc223)
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+Libraries: /home/tpsc223/Documents/cs498/Final Project/demo-plugin/src
+ /main/resources,/home/tpsc223/Documents/cs498/Final Project/demo-plug
+ in/target/classes
+Resource-Path: /home/tpsc223/Documents/cs498/Final Project/demo-plugin
+ /src/main/webapp
+
