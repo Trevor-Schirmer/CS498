@@ -78,12 +78,6 @@
             <version>2.14</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.jenkins-ci.tools/maven-hpi-plugin -->
-        <dependency>
-            <groupId>org.jenkins-ci.tools</groupId>
-            <artifactId>maven-hpi-plugin</artifactId>
-            <version>1.120</version>
-        </dependency>
     </dependencies>
 
     <!-- If you want this to appear on the wiki page:
