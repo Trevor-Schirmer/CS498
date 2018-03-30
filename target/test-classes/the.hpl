@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Group-Id: io.jenkins.plugins
+Short-Name: demo
+Long-Name: TODO Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-03/27/2018 15:29-anbr243)
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+Libraries: /home/anbr243/Documents/cs498/helloWorld/demo-plugin/src/ma
+ in/resources,/home/anbr243/Documents/cs498/helloWorld/demo-plugin/tar
+ get/classes
+Resource-Path: /home/anbr243/Documents/cs498/helloWorld/demo-plugin/sr
+ c/main/webapp
+
