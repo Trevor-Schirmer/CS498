@@ -49,6 +49,7 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
             listener.getLogger().println("Bonjour, " + name + "!");
         } else {
             listener.getLogger().println("Hello, " + name + "!");
+            listener.getLogger().println(this.getDescriptor());
         }
     }
 
