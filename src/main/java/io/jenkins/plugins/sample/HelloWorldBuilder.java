@@ -48,8 +48,8 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
         if (useFrench) {
             listener.getLogger().println("Bonjour, " + name + "!");
         } else {
-            listener.getLogger().println("Hello, " + name + "!");
-            listener.getLogger().println(this.getDescriptor());
+            listener.getLogger().println("Helllo, " + name + "!");
+            listener.getLogger().println("testing print");
         }
     }
 
