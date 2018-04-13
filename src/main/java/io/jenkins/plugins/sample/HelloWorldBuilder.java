@@ -11,6 +11,8 @@ import hudson.tasks.Builder;
 import hudson.tasks.Publisher;
 import hudson.tasks.Recorder;
 import hudson.tasks.BuildStepDescriptor;
+import hudson.tasks.BuildStepMonitor;
+
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 
@@ -48,8 +50,7 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
         if (useFrench) {
             listener.getLogger().println("Bonjour, " + name + "!");
         } else {
-            listener.getLogger().println("Helllo, " + name + "!");
-            listener.getLogger().println("testing print");
+            listener.getLogger().println("Hello, " + name + "!");
         }
     }
 
@@ -80,5 +81,11 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
         }
 
     }
+
+	@Override
+	public BuildStepMonitor getRequiredMonitorService() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
