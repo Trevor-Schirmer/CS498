@@ -20,16 +20,16 @@ import org.kohsuke.stapler.DataBoundSetter;
 
 public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
-    private final String errorMessage;
+    private final String name;
     private boolean useFrench;
 
     @DataBoundConstructor
-    public HelloWorldBuilder(String errorMessage) {
-        this.errorMessage = errorMessage;
+    public HelloWorldBuilder(String name) {
+        this.name = name;
     }
 
     public String getName() {
-        return errorMessage;
+        return name;
     }
 
     public boolean isUseFrench() {
@@ -44,9 +44,9 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
     @Override
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
         if (useFrench) {
-            listener.getLogger().println("Bonjour, " + errorMessage + "!");
+            listener.getLogger().println("Bonjour, " + name + "!");
         } else {
-            listener.getLogger().println("Error: " + errorMessage + "!");
+            listener.getLogger().println("Hello, " + name + "!");
         }
     }
 
