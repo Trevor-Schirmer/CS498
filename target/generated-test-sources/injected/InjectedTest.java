@@ -8,11 +8,11 @@ public class InjectedTest extends junit.framework.TestCase {
   public static junit.framework.Test suite() throws Exception {
     System.out.println("Running tests for "+"io.jenkins.plugins:demo:1.0-SNAPSHOT");
     Map<String, Object> parameters = new HashMap<String, Object>();
-    parameters.put("basedir","/home/anbr243/Documents/cs498/helloWorld/demo-plugin");
+    parameters.put("basedir","C:\\Users\\trevo\\Desktop\\CS498");
     parameters.put("artifactId","demo");
     parameters.put("packaging","hpi");
-    parameters.put("outputDirectory","/home/anbr243/Documents/cs498/helloWorld/demo-plugin/target/classes");
-    parameters.put("testOutputDirectory","/home/anbr243/Documents/cs498/helloWorld/demo-plugin/target/test-classes");
+    parameters.put("outputDirectory","C:\\Users\\trevo\\Desktop\\CS498\\target\\classes");
+    parameters.put("testOutputDirectory","C:\\Users\\trevo\\Desktop\\CS498\\target\\test-classes");
     parameters.put("requirePI","true");
     return org.jvnet.hudson.test.PluginAutomaticTestBuilder.build(parameters);
   }

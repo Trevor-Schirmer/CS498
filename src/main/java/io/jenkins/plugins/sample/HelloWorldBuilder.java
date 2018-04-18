@@ -22,7 +22,7 @@ import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
-public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
+public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
     private final String name;
     private boolean useFrench;
@@ -56,7 +56,7 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
 
     @Symbol("greet")
     @Extension
-    public static final class DescriptorImpl extends BuildStepDescriptor<Publisher> {
+    public static final class DescriptorImpl extends BuildStepDescriptor<Builder> {
 
         public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useFrench)
                 throws IOException, ServletException {
