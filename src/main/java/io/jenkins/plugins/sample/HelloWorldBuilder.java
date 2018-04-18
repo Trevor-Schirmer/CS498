@@ -8,11 +8,7 @@ import hudson.model.AbstractProject;
 import hudson.model.Run;
 import hudson.model.TaskListener;
 import hudson.tasks.Builder;
-import hudson.tasks.Publisher;
-import hudson.tasks.Recorder;
 import hudson.tasks.BuildStepDescriptor;
-import hudson.tasks.BuildStepMonitor;
-
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 
@@ -22,7 +18,7 @@ import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
-public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
+public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
 
     private final String name;
     private boolean useFrench;
@@ -31,6 +27,9 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
     public HelloWorldBuilder(String name) {
         this.name = name;
     }
+
+    @Override
+    public BuildStepMonitor getRequiredMonitorService() {return null;}
 
     public String getName() {
         return name;
@@ -50,13 +49,13 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         if (useFrench) {
             listener.getLogger().println("Bonjour, " + name + "!");
         } else {
-            listener.getLogger().println("Helloo, " + name + "!");
+            listener.getLogger().println("Hello, " + name + "!");
         }
     }
 
     @Symbol("greet")
     @Extension
-    public static final class DescriptorImpl extends BuildStepDescriptor<Builder> {
+    public static final class DescriptorImpl extends BuildStepDescriptor<Publisher> {
 
         public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useFrench)
                 throws IOException, ServletException {
@@ -81,11 +80,5 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         }
 
     }
-
-	@Override
-	public BuildStepMonitor getRequiredMonitorService() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
