@@ -1,0 +1,5 @@
+Running tests for io.jenkins.plugins:helloDev:1.0-SNAPSHOT
+Apr 18, 2018 11:40:16 AM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @667ms to org.eclipse.jetty.util.log.Slf4jLog
+Apr 18, 2018 11:40:18 AM org.jvnet.hudson.test.WarExploder explode
+INFO: Exploding /home/tpsc223/.m2/repository/org/jenkins-ci/main/jenkins-war/2.7.3/jenkins-war-2.7.3.war into /home/tpsc223/Desktop/cs498/498_dev/helloDev/target/jenkins-for-test
