@@ -1,0 +1,8 @@
+=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.012 [id=60]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:39104/jenkins/
+   0.032 [id=66]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.041 [id=66]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.185 [id=66]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.185 [id=68]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.186 [id=66]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.861 [id=67]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
