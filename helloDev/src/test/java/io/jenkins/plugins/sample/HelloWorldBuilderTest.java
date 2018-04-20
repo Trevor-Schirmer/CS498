@@ -71,7 +71,7 @@ public class HelloWorldBuilderTest {
                 + "}";
         job.setDefinition(new CpsFlowDefinition(pipelineScript, true));
         WorkflowRun completedBuild = jenkins.assertBuildStatusSuccess(job.scheduleBuild2(0));
-        String expectedString = "Hello, " + name + "!";
+        String expectedString = "Helloo, " + name + "!";
         jenkins.assertLogContains(expectedString, completedBuild);
     }
 
