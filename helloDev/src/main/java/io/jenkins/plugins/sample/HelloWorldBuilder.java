@@ -17,7 +17,7 @@ import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
-@Override
+
 public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
 
     private final String name;
@@ -49,6 +49,9 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
             listener.getLogger().println("Hello, " + name + "!");
         }
     }
+
+    @Override
+    public BuildStepMonitor getRequiredMonitorService(){return null;}
 
     @Symbol("greet")
     @Extension
