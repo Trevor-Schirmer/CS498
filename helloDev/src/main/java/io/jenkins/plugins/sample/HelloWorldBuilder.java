@@ -8,6 +8,7 @@ import hudson.model.AbstractProject;
 import hudson.model.Run;
 import hudson.model.TaskListener;
 import hudson.tasks.Builder;
+import hudson.tasks.Recorder;
 import hudson.tasks.BuildStepDescriptor;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
@@ -18,7 +19,7 @@ import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
-public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
+public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
 
     private final String name;
     private boolean useFrench;
@@ -52,7 +53,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
     @Symbol("greet")
     @Extension
-    public static final class DescriptorImpl extends BuildStepDescriptor<Builder> {
+    public static final class DescriptorImpl extends BuildStepDescriptor<Publisher> {
 
         public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useFrench)
                 throws IOException, ServletException {
@@ -75,6 +76,9 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         public String getDisplayName() {
             return Messages.HelloWorldBuilder_DescriptorImpl_DisplayName();
         }
+
+        @Override
+        public BuildStepMonitor getRequiredMonitorService() {return null;}
 
     }
 
