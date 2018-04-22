@@ -10,6 +10,7 @@ import hudson.model.TaskListener;
 import hudson.tasks.Builder;
 import hudson.tasks.Publisher;
 import hudson.tasks.Recorder;
+import hudson.tasks.BuildStep;
 import hudson.tasks.BuildStepMonitor;
 import hudson.tasks.BuildStepDescriptor;
 import org.kohsuke.stapler.DataBoundConstructor;
@@ -79,8 +80,7 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
             return Messages.HelloWorldBuilder_DescriptorImpl_DisplayName();
         }
 
-        @Override
-        public BuildStepMonitor getRequiredMonitorService() {return null;}
+       
 
     }
 
