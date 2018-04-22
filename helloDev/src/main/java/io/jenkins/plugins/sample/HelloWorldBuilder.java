@@ -17,6 +17,7 @@ import jenkins.tasks.SimpleBuildStep;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
+@Override
 public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
 
     private final String name;
