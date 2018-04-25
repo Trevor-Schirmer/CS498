@@ -21,7 +21,6 @@ import org.kohsuke.stapler.DataBoundSetter;
 public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
 
     private final String name;
-    private boolean useFrench;
 
     @DataBoundConstructor
     public HelloWorldBuilder(String name) {
@@ -32,41 +31,21 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
         return name;
     }
 
-    public boolean isUseFrench() {
-        return useFrench;
-    }
-
-    @DataBoundSetter
-    public void setUseFrench(boolean useFrench) {
-        this.useFrench = useFrench;
-    }
-
     @Override
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
-        if (useFrench) {
-            listener.getLogger().println("Bonjour, " + name + "!");
-        } else {
-            listener.getLogger().println("Hello, " + name + "!");
-        }
+    	listener.getLogger().println("Hello, " + name + "!");
     }
 
     @Override
-    public BuildStepMonitor getRequiredMonitorService(){return null;}
+    public BuildStepMonitor getRequiredMonitorService(){return BuildStepMonitor.NONE;}
 
     @Symbol("greet")
     @Extension
     public static final class DescriptorImpl extends BuildStepDescriptor<Publisher> {
 
-        public FormValidation doCheckName(@QueryParameter String value, @QueryParameter boolean useFrench)
+        public FormValidation doCheckName(@QueryParameter String value)
                 throws IOException, ServletException {
-            if (value.length() == 0)
-                return FormValidation.error(Messages.HelloWorldBuilder_DescriptorImpl_errors_missingName());
-            if (value.length() < 4)
-                return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_tooShort());
-            if (!useFrench && value.matches(".*[éáàç].*")) {
-                return FormValidation.warning(Messages.HelloWorldBuilder_DescriptorImpl_warnings_reallyFrench());
-            }
-            return FormValidation.ok();
+            return null;
         }
 
         @Override
@@ -78,9 +57,6 @@ public class HelloWorldBuilder extends Recorder implements SimpleBuildStep {
         public String getDisplayName() {
             return Messages.HelloWorldBuilder_DescriptorImpl_DisplayName();
         }
-
-       
-
     }
 
 }
