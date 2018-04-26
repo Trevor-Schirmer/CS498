@@ -16,7 +16,7 @@
                 <div>${i}</div>
             </j:forEach>
             </div>
-            <div style="background-color: ##fdced0;">
+            <div style="background-color: #fdced0;">
             <h1 style="background-color: #ca0813; color: white; padding: 15px; text-align: center;">Errors</h1>
             <j:forEach items="${it.errors}" var="i">
                 <div>${i}</div>
