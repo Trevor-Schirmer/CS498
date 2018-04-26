@@ -36,7 +36,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
     @Override
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
-        run.addAction(new HelloWorldAction(run.getLog(10000)));
+        run.addAction(new HelloWorldAction(run.getLog(10000), run.getResult()));
     }
 
     @Symbol("greet")
@@ -62,7 +62,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
         @Override
         public String getDisplayName() {
-            return Messages.HelloWorldBuilder_DescriptorImpl_DisplayName();
+            return "Project13";
         }
 
     }

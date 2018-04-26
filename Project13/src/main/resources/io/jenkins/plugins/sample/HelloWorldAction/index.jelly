@@ -5,23 +5,39 @@
             <st:include page="sidepanel.jelly" it="${it.run}" optional="true" />
         </l:side-panel>
         <l:main-panel>
-            <head>
-            </head>
             <body>
-            <div style="background-color: #f7f0d4;">
+            <h1 style="background-color: #${it.buildColor}; color: white; padding: 15px;">${it.buildResult}</h1>
+
             <j:if test="${!empty(it.warnings)}">
-            <h1 style="background-color: #c39f23; color: white; padding: 15px; text-align: center;">Warnings</h1>
-            </j:if>
-             <j:forEach items="${it.warnings}" var="i">
+            <div style="background-color: #f7f0d4;">
+            <h3 style="background-color: #c39f23; color: white; padding: 15px; text-align: center;">Warnings</h3>
+            <j:forEach items="${it.warnings}" var="i">
                 <div>${i}</div>
             </j:forEach>
             </div>
+            </j:if>
+
+            <j:if test="${empty(it.warnings)}">
+                <h3 style="background-color: green; color: white; padding: 15px; text-align: center;">
+                Sweet, no warnings!
+                </h3>
+            </j:if>
+
+            <j:if test="${!empty(it.errors)}">
             <div style="background-color: #fdced0;">
-            <h1 style="background-color: #ca0813; color: white; padding: 15px; text-align: center;">Errors</h1>
+            <h3 style="background-color: #ca0813; color: white; padding: 15px; text-align: center;">Errors</h3>
             <j:forEach items="${it.errors}" var="i">
                 <div>${i}</div>
             </j:forEach>
             </div>
+            </j:if>
+
+            <j:if test="${empty(it.errors)}">
+            <h3 style="background-color: green; color: white; padding: 15px; text-align: center;">
+            Congrats, no errors!
+            </h3>
+            </j:if>
+
             </body>
         </l:main-panel>
     </l:layout>
