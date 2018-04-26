@@ -12,7 +12,7 @@ import org.jvnet.hudson.test.JenkinsRule;
 
 public class HelloWorldBuilderTest {
 
-    @Rule
+/*    @Rule
     public JenkinsRule jenkins = new JenkinsRule();
 
     final String name = "Bobby";
@@ -73,6 +73,6 @@ public class HelloWorldBuilderTest {
         WorkflowRun completedBuild = jenkins.assertBuildStatusSuccess(job.scheduleBuild2(0));
         String expectedString = "Hello, " + name + "!";
         jenkins.assertLogContains(expectedString, completedBuild);
-    }
+    }*/
 
 }
