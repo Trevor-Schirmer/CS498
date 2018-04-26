@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 01:21:11.393 UTC</timestamp>
+  <md5sum>28e7eb9eeefe31a657c68755bfccc541</md5sum>
+  <fileName>junit:junit-3.8.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>mp2</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

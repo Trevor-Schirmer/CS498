@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 01:21:11.395 UTC</timestamp>
+  <md5sum>b0da47d5736aa6c16c0da7fd4fcfb8ba</md5sum>
+  <fileName>org.joda:joda-convert-1.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>mp2</string>
+      <ranges>1-7</ranges>
+    </entry>
+    <entry>
+      <string>mp2/joda-time:joda-time</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

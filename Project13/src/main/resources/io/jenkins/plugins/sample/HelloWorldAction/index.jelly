@@ -1,0 +1,28 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout" xmlns:st="jelly:stapler">
+    <l:layout title="Project13">
+        <l:side-panel>
+            <st:include page="sidepanel.jelly" it="${it.run}" optional="true" />
+        </l:side-panel>
+        <l:main-panel>
+            <head>
+            </head>
+            <body>
+            <div style="background-color: #f7f0d4;">
+            <j:if test="${!empty(it.warnings)}">
+            <h1 style="background-color: #c39f23; color: white; padding: 15px; text-align: center;">Warnings</h1>
+            </j:if>
+             <j:forEach items="${it.warnings}" var="i">
+                <div>${i}</div>
+            </j:forEach>
+            </div>
+            <div style="background-color: #fdced0;">
+            <h1 style="background-color: #ca0813; color: white; padding: 15px; text-align: center;">Errors</h1>
+            <j:forEach items="${it.errors}" var="i">
+                <div>${i}</div>
+            </j:forEach>
+            </div>
+            </body>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

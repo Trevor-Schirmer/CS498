@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.1.2">
+  <actions>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>2.9.9</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>joda-time-2.9.9.pom</canonicalName>
+        <md5sum>fc4b17cb78982aead06a202d8cdb7b1e</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+      <repositoryId>sonatype-joda-staging</repositoryId>
+      <repositoryUrl>http://oss.sonatype.org/service/local/staging/deploy/maven2/</repositoryUrl>
+    </hudson.maven.reporters.MavenArtifactRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>joda-time:joda-time:pom.xml</string>
+          <string>fc4b17cb78982aead06a202d8cdb7b1e</string>
+        </entry>
+        <entry>
+          <string>org.joda:joda-convert-1.2.jar</string>
+          <string>b0da47d5736aa6c16c0da7fd4fcfb8ba</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1524710207217</timestamp>
+  <startTime>1524710213868</startTime>
+  <result>FAILURE</result>
+  <duration>3859</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/Users/Adam/Developer/Project13/Project13/work/jobs/mp2/workspace</workspace>
+  <executedMojos class="java.util.concurrent.CopyOnWriteArrayList">
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-resources-plugin</artifactId>
+      <version>2.7</version>
+      <goal>resources</goal>
+      <executionId>default-resources</executionId>
+      <duration>904</duration>
+      <digest>1992654402055d45fbcc84e5dc2911e6</digest>
+    </hudson.maven.ExecutedMojo>
+    <hudson.maven.ExecutedMojo>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.3</version>
+      <goal>compile</goal>
+      <executionId>default-compile</executionId>
+      <duration>2094</duration>
+      <digest>b114a7a575b7424e64639b05f1d501a7</digest>
+    </hudson.maven.ExecutedMojo>
+  </executedMojos>
+</hudson.maven.MavenBuild>
