@@ -19,6 +19,8 @@ Option 2.
 > To create a new jenkins instance with the plugin installed do the following.
 > Clone the CS498 repository
 > Change your active directory to the helloDev directory in CS498
-> Use the following commands "mvn complile", "mvn hpi:hpi", "mvn hpi:run"
+> Use the following commands "mvn complile", "mvn hpi:hpi".
+> The helloDev.hpi file will be in the folder helloDev/target.
+> You may then either use Option 1 using this hpi file or continue.
 > After these commands finish their will be a new instance of jenkins running on your machine with the plugin installed.
 > In a browser of your choice go to http://(your ip address):8080/jenkins to access your jenkins instance.
