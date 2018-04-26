@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-    TODO
+    Project 13 will display warnings and errors from failed builds.
 </div>
