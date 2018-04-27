@@ -1,3 +1,17 @@
+<!--
+Modified by Adam Brassfield, Kipling Gillespie, Chase Carney, and Trevor Schirmer
+Date: April 27, 2018
+Course: CS 498
+Project: Final Project
+Purpose: Make Jenkins produce finer grained messages, not just "build passed" or "build failed".
+Currently, when there is a build failure, the only output from Jenkins is a message that says,
+"Build Passed" or "Build Failed". The goal of this project is to make Jenkins to give more details
+whenever there is a build failure. For example, if the build failed because tests fail, Jenkins
+should say so (it should also say which tests fail). Also, if the build failed because of missing
+dependencies or failures due to hardware or software (mis)configuration, Jenkins should output
+this along with the standard "build failed" message.
+-->
+
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:l="/lib/layout" xmlns:st="jelly:stapler">
     <l:layout title="Project13">
@@ -5,23 +19,43 @@
             <st:include page="sidepanel.jelly" it="${it.run}" optional="true" />
         </l:side-panel>
         <l:main-panel>
-            <head>
-            </head>
             <body>
-            <div style="background-color: #f7f0d4;">
+            <!-- Print build result in the proper color -->
+            <h1 style="background-color: #${it.buildColor}; color: white; padding: 15px;">${it.buildResult}</h1>
+
+            <!-- If there are warnings, display them -->
             <j:if test="${!empty(it.warnings)}">
-            <h1 style="background-color: #c39f23; color: white; padding: 15px; text-align: center;">Warnings</h1>
-            </j:if>
-             <j:forEach items="${it.warnings}" var="i">
+            <div style="background-color: #f7f0d4;">
+            <h3 style="background-color: #c39f23; color: white; padding: 15px; text-align: center;">Warnings</h3>
+            <j:forEach items="${it.warnings}" var="i">
                 <div>${i}</div>
             </j:forEach>
             </div>
+            </j:if>
+
+            <!-- Otherwise, let the user no there are no warnings -->
+            <j:if test="${empty(it.warnings)}">
+                <h3 style="background-color: green; color: white; padding: 15px; text-align: center;">
+                Sweet, no warnings!
+                </h3>
+            </j:if>
+
+            <!-- Do the same thing for errors -->
+            <j:if test="${!empty(it.errors)}">
             <div style="background-color: #fdced0;">
-            <h1 style="background-color: #ca0813; color: white; padding: 15px; text-align: center;">Errors</h1>
+            <h3 style="background-color: #ca0813; color: white; padding: 15px; text-align: center;">Errors</h3>
             <j:forEach items="${it.errors}" var="i">
                 <div>${i}</div>
             </j:forEach>
             </div>
+            </j:if>
+
+            <j:if test="${empty(it.errors)}">
+            <h3 style="background-color: green; color: white; padding: 15px; text-align: center;">
+            Congrats, no errors!
+            </h3>
+            </j:if>
+
             </body>
         </l:main-panel>
     </l:layout>

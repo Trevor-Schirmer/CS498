@@ -10,7 +10,7 @@
   <usages>
     <entry>
       <string>test-unstable/joda-time:joda-time</string>
-      <ranges>1</ranges>
+      <ranges>1-2</ranges>
     </entry>
     <entry>
       <string>mp2 - test error</string>
@@ -22,7 +22,7 @@
     </entry>
     <entry>
       <string>test-unstable</string>
-      <ranges>1</ranges>
+      <ranges>1-2</ranges>
     </entry>
   </usages>
   <facets/>

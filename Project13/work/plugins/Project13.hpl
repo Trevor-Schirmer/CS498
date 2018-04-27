@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Group-Id: io.jenkins.plugins
 Short-Name: Project13
 Long-Name: Project 13 Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-750784c9-Adam)
+Plugin-Version: 1.0-SNAPSHOT (private-e26a3fe4-Adam)
 Hudson-Version: 2.7.3
 Jenkins-Version: 2.7.3
 Plugin-Dependencies: structs:1.7

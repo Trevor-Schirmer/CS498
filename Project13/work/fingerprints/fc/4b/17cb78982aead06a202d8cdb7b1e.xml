@@ -14,7 +14,7 @@
     </entry>
     <entry>
       <string>test-success</string>
-      <ranges>1</ranges>
+      <ranges>1-2</ranges>
     </entry>
     <entry>
       <string>mp2 - test error/joda-time:joda-time</string>
@@ -26,26 +26,26 @@
     </entry>
     <entry>
       <string>test-success/joda-time:joda-time</string>
-      <ranges>1</ranges>
+      <ranges>1-2</ranges>
     </entry>
     <entry>
       <string>test-failure/joda-time:joda-time</string>
-      <ranges>1</ranges>
+      <ranges>1-2</ranges>
     </entry>
     <entry>
       <string>test-failure</string>
-      <ranges>1</ranges>
+      <ranges>1-2</ranges>
     </entry>
     <entry>
       <string>mp2/joda-time:joda-time</string>
       <ranges>1-8</ranges>
     </entry>
     <entry>
-      <string>mp2 - working/joda-time:joda-time</string>
+      <string>mp2 - working</string>
       <ranges>1</ranges>
     </entry>
     <entry>
-      <string>mp2 - working</string>
+      <string>mp2 - working/joda-time:joda-time</string>
       <ranges>1</ranges>
     </entry>
   </usages>

@@ -12,12 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelloWorldAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloWorldAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#3617#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -25,21 +27,20 @@
       <file leaf-file-name="index.jelly" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/sample/HelloWorldAction/index.jelly">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="765">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorldBuilder.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HelloWorldBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
-                <element signature="e#790#791#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#0#3107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,7 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="AndroidView" />
@@ -153,6 +153,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,9 +313,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#3617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#3107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/sample/HelloWorldAction/index.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#0#3617#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -331,8 +362,7 @@
         <state relative-caret-position="150">
           <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
           <folding>
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#0#3107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -341,7 +371,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="e#0#3617#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -358,8 +390,7 @@
         <state relative-caret-position="150">
           <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
           <folding>
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#0#3107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -368,7 +399,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="e#0#3617#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -385,8 +418,7 @@
         <state relative-caret-position="525">
           <caret line="51" column="53" lean-forward="true" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
           <folding>
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#0#3107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -395,7 +427,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-          <folding />
+          <folding>
+            <element signature="e#0#3617#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -412,8 +446,7 @@
         <state relative-caret-position="270">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#0#3107#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -475,30 +508,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#3617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/io/jenkins/plugins/sample/HelloWorldAction/index.jelly">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="765">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#3107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,3 +1,17 @@
+/*
+Modified by Adam Brassfield, Kipling Gillespie, Chase Carney, and Trevor Schirmer
+Date: April 27, 2018
+Course: CS 498
+Project: Final Project
+Purpose: Make Jenkins produce finer grained messages, not just "build passed" or "build failed".
+Currently, when there is a build failure, the only output from Jenkins is a message that says,
+"Build Passed" or "Build Failed". The goal of this project is to make Jenkins to give more details
+whenever there is a build failure. For example, if the build failed because tests fail, Jenkins
+should say so (it should also say which tests fail). Also, if the build failed because of missing
+dependencies or failures due to hardware or software (mis)configuration, Jenkins should output
+this along with the standard "build failed" message.
+ */
+
 package io.jenkins.plugins.sample;
 
 import hudson.Launcher;
@@ -34,6 +48,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
         this.useFrench = useFrench;
     }
 
+    // Modify perform to call the HelloWorldAction class using data from the run
     @Override
     public void perform(Run<?, ?> run, FilePath workspace, Launcher launcher, TaskListener listener) throws InterruptedException, IOException {
         run.addAction(new HelloWorldAction(run.getLog(10000), run.getResult()));

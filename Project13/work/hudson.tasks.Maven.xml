@@ -2,7 +2,7 @@
 <hudson.tasks.Maven_-DescriptorImpl>
   <installations>
     <hudson.tasks.Maven_-MavenInstallation>
-      <name>pom.xml</name>
+      <name>Maven 3.5.3</name>
       <properties>
         <hudson.tools.InstallSourceProperty>
           <installers>
