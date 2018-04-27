@@ -6,6 +6,14 @@ Project 13: Make Jenkins produce finer grained messages, not just "build passed"
 
 Requirements: Maven 3.5.3
 
+Files of interest:
+> Project13/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java <br>
+> - This is modified to call our Action class with parameters used to produce our data <br>
+> Project13/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java <br>
+> - This contains the bulk of the code we wrote which gets the build status, the build color, the warnings, and errors to display to the user
+> Project13/src/main/resources/io/jenkins/plugins/sample/HelloWorldAction/index.jelly <br>
+> - This is the jelly file we created for the webpage that displays the results to the user.
+
 To get the plugin working on your machine:
 > Download this repository to your machine and navigate to the Project 13 subdirectory. Here, enter to the command "mvn hpi:run" this will setup an instance of
 Jenkins which will have the plugin loaded into it. To access Jenkins, go to "https://(your ip address):8080/jenkins/". This instance of Jenkins also comes with support for Maven projects as well as 3 Maven projects created for the purpose of testing the plugin's functionality.
