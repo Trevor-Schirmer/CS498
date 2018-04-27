@@ -10,7 +10,7 @@ Files of interest:
 > Project13/src/main/java/io/jenkins/plugins/sample/HelloWorldBuilder.java <br>
 > - This is modified to call our Action class with parameters used to produce our data <br>
 > Project13/src/main/java/io/jenkins/plugins/sample/HelloWorldAction.java <br>
-> - This contains the bulk of the code we wrote which gets the build status, the build color, the warnings, and errors to display to the user
+> - This contains the bulk of the code we wrote which gets the build status, the build color, the warnings, and errors to display to the user <br>
 > Project13/src/main/resources/io/jenkins/plugins/sample/HelloWorldAction/index.jelly <br>
 > - This is the jelly file we created for the webpage that displays the results to the user.
 
