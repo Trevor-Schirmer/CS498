@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-27 14:53:54.22 UTC</timestamp>
+  <original>
+    <name>test-unstable/joda-time:joda-time</name>
+    <number>1</number>
+  </original>
+  <md5sum>047867627ef72543fc4c2724c82b4684</md5sum>
+  <fileName>joda-time:joda-time-2.9.9-no-tzdb.jar</fileName>
+  <usages>
+    <entry>
+      <string>test-unstable/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>test-unstable</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

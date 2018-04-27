@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 23:08:41.230 UTC</timestamp>
+  <original>
+    <name>mp2 - test error/joda-time:joda-time</name>
+    <number>8</number>
+  </original>
+  <md5sum>6a02d9d596aceefadb1b6d8fe2b1b1d8</md5sum>
+  <fileName>joda-time:joda-time:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>test-unstable/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - test error</string>
+      <ranges>8</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - test error/joda-time:joda-time</string>
+      <ranges>8</ranges>
+    </entry>
+    <entry>
+      <string>test-unstable</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

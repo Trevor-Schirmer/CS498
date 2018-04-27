@@ -2,14 +2,12 @@ Manifest-Version: 1.0
 Group-Id: io.jenkins.plugins
 Short-Name: Project13
 Long-Name: Project 13 Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-8c6ed7a6-Chase)
+Plugin-Version: 1.0-SNAPSHOT (private-750784c9-Adam)
 Hudson-Version: 2.7.3
 Jenkins-Version: 2.7.3
 Plugin-Dependencies: structs:1.7
 Plugin-Developers: 
-Libraries: /Users/Chase/Desktop/Classes/Spring/CS498/CS498/Project13/s
- rc/main/resources,/Users/Chase/Desktop/Classes/Spring/CS498/CS498/Pro
- ject13/target/classes
-Resource-Path: /Users/Chase/Desktop/Classes/Spring/CS498/CS498/Project
- 13/src/main/webapp
+Libraries: /Users/Adam/Desktop/CS498/Project13/src/main/resources,/Use
+ rs/Adam/Desktop/CS498/Project13/target/classes
+Resource-Path: /Users/Adam/Desktop/CS498/Project13/src/main/webapp
 

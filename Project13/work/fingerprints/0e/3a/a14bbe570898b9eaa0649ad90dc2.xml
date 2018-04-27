@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-26 22:59:00.455 UTC</timestamp>
+  <original>
+    <name>mp2 - test error/joda-time:joda-time</name>
+    <number>4</number>
+  </original>
+  <md5sum>0e3aa14bbe570898b9eaa0649ad90dc2</md5sum>
+  <fileName>joda-time:joda-time-2.9.9.jar</fileName>
+  <usages>
+    <entry>
+      <string>mp2 - test error</string>
+      <ranges>4</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - test error/joda-time:joda-time</string>
+      <ranges>4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

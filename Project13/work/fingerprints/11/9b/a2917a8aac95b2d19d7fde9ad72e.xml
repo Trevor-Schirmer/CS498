@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-27 14:51:13.848 UTC</timestamp>
+  <original>
+    <name>test-success/joda-time:joda-time</name>
+    <number>1</number>
+  </original>
+  <md5sum>119ba2917a8aac95b2d19d7fde9ad72e</md5sum>
+  <fileName>joda-time:joda-time-2.9.9-javadoc.jar</fileName>
+  <usages>
+    <entry>
+      <string>test-success/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>test-success</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

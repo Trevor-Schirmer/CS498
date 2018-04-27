@@ -9,12 +9,44 @@
   <fileName>joda-time:joda-time:pom.xml</fileName>
   <usages>
     <entry>
-      <string>mp2</string>
+      <string>mp2 - test error</string>
       <ranges>1-7</ranges>
     </entry>
     <entry>
-      <string>mp2/joda-time:joda-time</string>
+      <string>test-success</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - test error/joda-time:joda-time</string>
       <ranges>1-7</ranges>
+    </entry>
+    <entry>
+      <string>mp2</string>
+      <ranges>1-8</ranges>
+    </entry>
+    <entry>
+      <string>test-success/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>test-failure/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>test-failure</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2/joda-time:joda-time</string>
+      <ranges>1-8</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - working/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - working</string>
+      <ranges>1</ranges>
     </entry>
   </usages>
   <facets/>

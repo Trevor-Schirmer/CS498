@@ -5,11 +5,43 @@
   <fileName>junit:junit-3.8.2.jar</fileName>
   <usages>
     <entry>
+      <string>test-unstable/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - test error</string>
+      <ranges>1-8</ranges>
+    </entry>
+    <entry>
+      <string>test-success</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - test error/joda-time:joda-time</string>
+      <ranges>1-8</ranges>
+    </entry>
+    <entry>
       <string>mp2</string>
       <ranges>1</ranges>
     </entry>
     <entry>
+      <string>test-success/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>test-unstable</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
       <string>mp2/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - working/joda-time:joda-time</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>mp2 - working</string>
       <ranges>1</ranges>
     </entry>
   </usages>
