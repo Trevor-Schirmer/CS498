@@ -1,31 +1,17 @@
 # CS498
 CS498 Final Project
-
-
+Group 10 - Adam Brassfield, Kipling Gillespie, Chase Carney, and Trevor Schirmer
 
 Project 13:Make Jenkins produce finer grained messages, not just "build passed" or "build failed". Currently, when there is a build failure, the only output from Jenkins is a message that says, "Build Passed" or "Build Failed". The goal of this project is to make Jenkins give more details whenever there is a build failure. For example, if the build failed because tests fail, Jenkins should say so (it should also say which tests fail). Also, if the build failed because of missing dependencies or failures due to hardware or software (mis)configuration, Jenkins should output this along with the standard "build failed" message.
 
+Requirements: Maven 3.5.3
 
-To use this plugin you have two options.
+To get the plugin working on your machine:
+> Download this repository to your machine and navigate to the Project 13 subdirectory. Here, enter to the command "mvn hpi:run" this will setup an instance of
+Jenkins which will have the plugin loaded into it. To access Jenkins, go to "https://(your ip address):8080/jenkins/". This instance of Jenkins also comes with support for Maven projects as well as 3 Maven projects created for the purpose of testing the plugin's functionality.
 
-Option 1.
-Download the helloDev.hpi file.
-> Start the Jenkins instance you wish to use.
-> Go to manage jenkins > manage plugins > advanced
-> Select upload plugin and browse to where you stored helloDev.hpi and select it.
-> Your jenkins instance will then install the plugin, but it may require a restart to take effect. 
+To add the plugin to a project:
+> Select configure and select "Project13" on the post-build step options. It will prompt you for a name, which is optional, and does not affect the output of the build. Save your configurations.
 
-Option 2.
-> To create a new jenkins instance with the plugin installed do the following.
-> Clone the CS498 repository
-> Change your active directory to the helloDev directory in CS498
-> Use the following commands "mvn complile", "mvn hpi:hpi".
-> The helloDev.hpi file will be in the folder helloDev/target.
-> You may then either use Option 1 using this hpi file or continue.
-> After these commands finish their will be a new instance of jenkins running on your machine with the plugin installed.
-> In a browser of your choice go to http://(your ip address):8080/jenkins to access your jenkins instance.
-
-When jenkins runs a build, there is a tab on the left hand side of the build called project 13 which will have your build information.
-
-Requirements:
-Maven 3.5.3
+To see the output of the plugin:
+> Build an instance of your project and navigate to it. Select the "Project13" option on the sidebar. Note that the "Project13" option doesn't appear until after the project has finished building and you may need to refresh the page once it has. This page will tell you the status of the build, the status of the warnings, and the status of the errors.
