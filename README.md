@@ -24,3 +24,8 @@ Option 2.
 > You may then either use Option 1 using this hpi file or continue.
 > After these commands finish their will be a new instance of jenkins running on your machine with the plugin installed.
 > In a browser of your choice go to http://(your ip address):8080/jenkins to access your jenkins instance.
+
+When jenkins runs a build, there is a tab on the left hand side of the build called project 13 which will have your build information.
+
+Requirements:
+Maven 3.5.3
